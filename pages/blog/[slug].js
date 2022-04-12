@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import marked from 'marked';
+import { marked } from 'marked';
 import Link from 'next/link';
 import Layout from '@/components/Layout';
 import CategoryLabel from '@/components/CategoryLabel';
@@ -34,9 +34,9 @@ export default function PostPage({
 					<div className='mr-4'>{date}</div>
 				</div>
 
-				{/* <div className='blog-text mt-2'>
+				<div className='blog-text mt-2'>
 					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-				</div> */}
+				</div>
 			</div>
 		</Layout>
 	);
